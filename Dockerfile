@@ -13,6 +13,7 @@ ENV VERSION_SDK_TOOLS "3859397"
 ENV ANDROID_HOME "/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
 ENV DEBIAN_FRONTEND noninteractive
+ENV GIT_SSL_NO_VERIFY true
 
 RUN apt-get -qq update && \
     apt-get install -qqy --no-install-recommends \
